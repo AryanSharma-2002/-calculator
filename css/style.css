@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,900;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,700&family=The+Nautigal:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ############# html element styling ############# */
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3{
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+p,li,a{
+    font-size: 1.6rem;
+}
+
+
+/* ############# utility classes ############# */
+.container-center{
+    max-width: 300px;
+    margin: 0 auto;
+    width: 90%;
+}
+.text-black{
+    color: black;
+}
+.text-white{
+    color: white;
+}
+.bg-white{
+    background-color: white;
+}
+.bg-pink{
+    background-color:  rgb(243, 187, 206);
+}
+.bg-red{
+    background-color: darkred;
+}
+
+
+/* ############# calculator styling ############# */
+.calculator-box{
+    width: 350px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 2px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.calculator-box .input{
+    flex: 1 1 350px;
+    /* width: 100%; */
+    height: 20%;
+    /* border: 2px solid black; */
+}
+.calculator-box .content{
+    flex: 1 1 350px;
+    /* width: 100%; */
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.content .box{
+    width: 100%;
+    height: 20%;
+    /* border: 2px solid teal; */
+    display: flex;
+    flex-direction: row;
+}
+.content .items{
+    width: 25%;
+    border: 2px solid rgb(243, 187, 206);
+    text-align: center;
+    display: flex;
+}
+#box-5 .item-1{
+    width: 50%;
+}
+.items span{
+    font-size: 3rem;
+    font-weight: 700;
+    /* margin: auto; */
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.items:last-child{
+    color: white;
+}
+
+
+
+/* ############# input shown when click on which space #############*/
+.input{
+    display: flex;
+}
+.input .show-input{
+    /* border: 2px solid white; */
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding-right: 2px;
+    text-align: right;
+    font-size: 3rem;
+    font-weight: 700;
+    background-color: pink;
+    outline: none;
+    border: none;
+}
